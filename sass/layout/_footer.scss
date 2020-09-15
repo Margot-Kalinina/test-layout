@@ -1,0 +1,53 @@
+.footer-section {
+  width: 100%;
+  background: #f7f7f7;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 19px;
+  padding-bottom: 32px;
+  color: #3a4047;
+  a {
+    color: #3a4047;
+  }
+  .nav-item {
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: underline;
+  }
+  .studio {
+    margin-top: 33px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+  }
+}
+.rights-reserved {
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer-about-us {
+  margin-left: 42px;
+  max-width: 261px;
+  font-size: 14px;
+  line-height: 21px;
+  .what-we-do {
+    margin-bottom: 25px;
+  }
+}
+.footer-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  width: 274px;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+.contact-container {
+  text-align: right;
+}

@@ -1,0 +1,74 @@
+.hero-section {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 153px;
+  height: 500px;
+  max-width: 1920px;
+  background-color: #2e2c2c;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../image/hero-bacg-img1920@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../../image/hero-bacg-img3840@2x.jpg);
+  }
+}
+.hero-text {
+  text-align: center;
+  color: #ffffff;
+  h1 {
+    margin-bottom: 25px;
+    font-size: 55px;
+    line-height: 1.17;
+    align-items: center;
+
+    &::after {
+      margin: 0 auto;
+      margin-top: 10px;
+      display: block;
+      content: "";
+      width: 120px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+  p {
+    margin-bottom: 27px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+.make-an-order {
+  min-width: 200px;
+  height: 48px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #1ab0ce;
+  border: 1px solid #1ab0ce;
+  border-radius: 2px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #1ab0ce;
+    background-color: #ffffff;
+  }
+}

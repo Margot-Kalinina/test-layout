@@ -1,0 +1,121 @@
+.box-shadow {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+.header-first-part {
+  display: flex;
+  padding-top: 17px;
+  padding-bottom: 20px;
+}
+.header-about-us {
+  margin-left: 62px;
+  max-width: 375px;
+  text-align: center;
+  .what-we-do {
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3a4047;
+  }
+  .work-hour {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    color: #3a4047;
+  }
+}
+.area-email-container {
+  margin-left: 69px;
+  display: flex;
+  justify-content: space-between;
+  width: 347px;
+  .personal-area {
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration-line: underline;
+
+    color: #3a4047;
+  }
+  .contact-email {
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration-line: underline;
+
+    color: #3a4047;
+  }
+}
+.phone-numbers {
+  position: relative;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: right;
+
+  color: #3a4047;
+  .facebook-icon {
+    position: absolute;
+    left: 244px;
+  }
+  .main-number {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    color: #3a4047;
+    .phone-img {
+      position: absolute;
+      left: 267px;
+    }
+  }
+  .secondary-number {
+    color: #3a4047;
+  }
+  .phone-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    left: 450px;
+    background-color: #ededed;
+  }
+}
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  height: 56px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: uppercase;
+
+  li {
+    position: relative;
+  }
+  li + li::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: "";
+    display: block;
+    height: 14px;
+    width: 1px;
+    background-color: #e8edf2;
+  }
+  .item {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    padding-left: 34px;
+    padding-right: 34px;
+    color: #3a4047;
+    &:hover,
+    &:focus {
+      padding-top: 14px;
+      color: #1ab0ce;
+      border-top: 1px solid #1ab0ce;
+    }
+  }
+}

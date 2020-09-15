@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: #3a4047;
+}
