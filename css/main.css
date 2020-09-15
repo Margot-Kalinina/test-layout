@@ -229,7 +229,6 @@ h2 {
 }
 
 .navigation-list .item:hover, .navigation-list .item:focus {
-  padding-top: 14px;
   color: #1ab0ce;
   border-top: 1px solid #1ab0ce;
 }
