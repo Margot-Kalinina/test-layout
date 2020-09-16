@@ -4,7 +4,7 @@
 .header-first-part {
   display: flex;
   padding-top: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 .header-about-us {
   margin-left: 62px;
@@ -30,11 +30,17 @@
   justify-content: space-between;
   width: 347px;
   .personal-area {
+    position: relative;
     font-size: 14px;
     line-height: 1.14;
     text-decoration-line: underline;
 
     color: #3a4047;
+    .icon {
+      position: absolute;
+      top: 2px;
+      left: -15px;
+    }
   }
   .contact-email {
     font-size: 14px;
@@ -46,6 +52,7 @@
 }
 .phone-numbers {
   position: relative;
+  padding-right: 25px;
   margin-top: 20px;
   font-size: 16px;
   line-height: 1.18;
@@ -54,7 +61,7 @@
   color: #3a4047;
   .facebook-icon {
     position: absolute;
-    left: 244px;
+    left: 219px;
   }
   .main-number {
     position: relative;
@@ -63,11 +70,45 @@
     color: #3a4047;
     .phone-img {
       position: absolute;
-      left: 267px;
+      left: 242px;
+    }
+  }
+  .header-secondary-number-container {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+    top: 37px;
+    right: -10px;
+    padding-top: 30px;
+    padding-left: 65px;
+    text-align: left;
+    width: 210px;
+    height: 170px;
+    background-color: #ffffff;
+    box-shadow: (0px 4px 45px rgba(0, 0, 0, 0.15));
+
+    &.is-open {
+      opacity: 1;
+      transform: scale(1);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 20;
     }
   }
   .secondary-number {
+    position: relative;
+    display: block;
     color: #3a4047;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .number-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -35px;
+    }
   }
   .phone-button {
     position: absolute;
@@ -76,7 +117,7 @@
     border-radius: 50%;
     border: none;
     top: 0px;
-    left: 425px;
+    left: 398px;
     background-color: #ededed;
   }
 }
@@ -137,4 +178,10 @@
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+}
+.squere {
+  position: absolute;
+  z-index: 21;
+  top: -10px;
+  right: 0px;
 }

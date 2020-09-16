@@ -108,7 +108,7 @@ h2 {
 .header-first-part {
   display: flex;
   padding-top: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .header-about-us {
@@ -139,10 +139,17 @@ h2 {
 }
 
 .area-email-container .personal-area {
+  position: relative;
   font-size: 14px;
   line-height: 1.14;
   text-decoration-line: underline;
   color: #3a4047;
+}
+
+.area-email-container .personal-area .icon {
+  position: absolute;
+  top: 2px;
+  left: -15px;
 }
 
 .area-email-container .contact-email {
@@ -154,6 +161,7 @@ h2 {
 
 .phone-numbers {
   position: relative;
+  padding-right: 25px;
   margin-top: 20px;
   font-size: 16px;
   line-height: 1.18;
@@ -163,7 +171,7 @@ h2 {
 
 .phone-numbers .facebook-icon {
   position: absolute;
-  left: 244px;
+  left: 219px;
 }
 
 .phone-numbers .main-number {
@@ -175,11 +183,46 @@ h2 {
 
 .phone-numbers .main-number .phone-img {
   position: absolute;
-  left: 267px;
+  left: 242px;
+}
+
+.phone-numbers .header-secondary-number-container {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+  top: 37px;
+  right: -10px;
+  padding-top: 30px;
+  padding-left: 65px;
+  text-align: left;
+  width: 210px;
+  height: 170px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.15);
+}
+
+.phone-numbers .header-secondary-number-container.is-open {
+  opacity: 1;
+  transform: scale(1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
 }
 
 .phone-numbers .secondary-number {
+  position: relative;
+  display: block;
   color: #3a4047;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.phone-numbers .secondary-number .number-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -35px;
 }
 
 .phone-numbers .phone-button {
@@ -189,7 +232,7 @@ h2 {
   border-radius: 50%;
   border: none;
   top: 0px;
-  left: 425px;
+  left: 398px;
   background-color: #ededed;
 }
 
@@ -253,6 +296,13 @@ h2 {
   height: 1px;
   background-color: #1ab0ce;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.squere {
+  position: absolute;
+  z-index: 21;
+  top: -10px;
+  right: 0px;
 }
 
 .hero-section {
@@ -590,5 +640,44 @@ h2 {
   position: absolute;
   top: -2px;
   left: 8px;
+}
+
+.footer-secondary-number-container {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+  top: 45px;
+  right: -35px;
+  padding-top: 7px;
+  padding-left: 65px;
+  text-align: left;
+  width: 210px;
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.15);
+}
+
+.footer-secondary-number-container.is-open {
+  opacity: 1;
+  transform: scale(1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
+}
+
+.footer-secondary-number-container .secondary-number {
+  position: relative;
+  display: block;
+  color: #3a4047;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer-secondary-number-container .secondary-number .number-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -35px;
 }
 /*# sourceMappingURL=main.css.map */

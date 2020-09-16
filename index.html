@@ -37,7 +37,16 @@
             </div>
             <div>
               <div class="area-email-container">
-                <a class="personal-area" href="">Личный кабинет</a>
+                <a class="personal-area" href=""
+                  ><img
+                    class="icon"
+                    width="12"
+                    height="13"
+                    src="./image/personal-area-icon.svg"
+                    alt=""
+                  />
+                  Личный кабинет</a
+                >
                 <address>
                   <a class="contact-email" href="mailto:maket@test-verstka.ua"
                     >maket@test-verstka.ua</a
@@ -62,7 +71,12 @@
                     alt="phone"
                   />(044) 345-40-42
                 </a>
-                <button class="phone-button" type="button">
+                <button
+                  telephone-button
+                  aria-controls="telephone-container"
+                  class="phone-button"
+                  type="button"
+                >
                   <img
                     class="feather-icon"
                     width="8"
@@ -72,24 +86,53 @@
                   />
                 </button>
 
-                <div>
+                <div
+                  telephone-container
+                  id="telephone-container"
+                  class="header-secondary-number-container"
+                >
                   <ul>
                     <li>
                       <a class="secondary-number" href="tel:+380994455418>"
-                        >(099) 445-54-18</a
+                        ><img
+                          class="number-icon"
+                          width="25"
+                          height="25"
+                          src="./image/vodafon.png"
+                          alt=""
+                        />(099) 445-54-18</a
                       >
                     </li>
                     <li>
                       <a class="secondary-number" href="tel:+380964977803>"
-                        >(096) 497-78-03</a
+                        ><img
+                          class="number-icon"
+                          width="25"
+                          height="25"
+                          src="./image/star.png"
+                          alt=""
+                        />(096) 497-78-03</a
                       >
                     </li>
                     <li>
                       <a class="secondary-number" href="tel:+380634351681>"
-                        >(063) 435-16-81</a
+                        ><img
+                          class="number-icon"
+                          width="25"
+                          height="25"
+                          src="./image/life.png"
+                          alt=""
+                        />(063) 435-16-81</a
                       >
                     </li>
                   </ul>
+                  <img
+                    class="squere"
+                    width="35"
+                    height="35"
+                    src="./image/rectangle.svg"
+                    alt=""
+                  />
                 </div>
               </address>
             </div>
@@ -297,7 +340,12 @@
                 alt="phone"
               />(044) 345-40-42
             </a>
-            <button class="footer-phone-button" type="button">
+            <button
+              footer-telephone-button
+              aria-expanded="footer-telephone-container"
+              class="footer-phone-button"
+              type="button"
+            >
               <img
                 class="feather-icon"
                 width="8"
@@ -306,12 +354,53 @@
                 alt=""
               />
             </button>
-            <div>
+            <div
+              footer-telephone-container
+              id="footer-telephone-container"
+              class="footer-secondary-number-container"
+            >
               <ul>
-                <li><a href="tel:+380994455418>">(099) 445-54-18</a></li>
-                <li><a href="tel:+380964977803>">(096) 497-78-03</a></li>
-                <li><a href="tel:+380634351681>">(063) 435-16-81</a></li>
+                <li>
+                  <a class="secondary-number" href="tel:+380994455418>"
+                    ><img
+                      class="number-icon"
+                      width="25"
+                      height="25"
+                      src="./image/vodafon.png"
+                      alt=""
+                    />(099) 445-54-18</a
+                  >
+                </li>
+                <li>
+                  <a class="secondary-number" href="tel:+380964977803>"
+                    ><img
+                      class="number-icon"
+                      width="25"
+                      height="25"
+                      src="./image/star.png"
+                      alt=""
+                    />(096) 497-78-03</a
+                  >
+                </li>
+                <li>
+                  <a class="secondary-number" href="tel:+380634351681>"
+                    ><img
+                      class="number-icon"
+                      width="25"
+                      height="25"
+                      src="./image/life.png"
+                      alt=""
+                    />(063) 435-16-81</a
+                  >
+                </li>
               </ul>
+              <img
+                class="squere"
+                width="35"
+                height="35"
+                src="./image/rectangle.svg"
+                alt=""
+              />
             </div>
           </address>
           <nav class="footer-contact-item">
@@ -329,5 +418,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/header-numbers.js"></script>
+    <script src="./js/footer-numbers.js"></script>
   </body>
 </html>
