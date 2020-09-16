@@ -487,6 +487,10 @@ h2 {
   background: #f7f7f7;
 }
 
+.footer-section .container {
+  padding-right: 30px;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -506,6 +510,7 @@ h2 {
 }
 
 .footer .studio {
+  position: relative;
   margin-top: 33px;
   font-family: "Cuprum";
   font-weight: 500;
@@ -543,7 +548,7 @@ h2 {
 .contact-container {
   position: relative;
   text-align: right;
-  width: 180px;
+  width: 200px;
 }
 
 .contact-container .main-number {
@@ -559,7 +564,7 @@ h2 {
 .contact-container .footer-facebook {
   position: absolute;
   top: 0px;
-  left: 10px;
+  left: 30px;
 }
 
 .contact-container .footer-phone-button {
@@ -569,7 +574,17 @@ h2 {
   border-radius: 50%;
   border: none;
   top: 0px;
-  left: 187px;
+  left: 207px;
   background-color: #ffffff;
+}
+
+.footer-contact-item {
+  margin-top: 20px;
+}
+
+.glianec-logo {
+  position: absolute;
+  top: -2px;
+  left: 8px;
 }
 /*# sourceMappingURL=main.css.map */
