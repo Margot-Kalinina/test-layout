@@ -51,6 +51,7 @@
 .contact-container {
   position: relative;
   text-align: right;
+  width: 180px;
   .main-number {
     position: relative;
   }
@@ -62,6 +63,16 @@
   .footer-facebook {
     position: absolute;
     top: 0px;
-    left: 1px;
+    left: 10px;
+  }
+  .footer-phone-button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    top: 0px;
+    left: 187px;
+    background-color: #ffffff;
   }
 }
