@@ -49,5 +49,19 @@
   }
 }
 .contact-container {
+  position: relative;
   text-align: right;
+  .main-number {
+    position: relative;
+  }
+  .footer-phone {
+    position: absolute;
+    top: 2px;
+    left: -30px;
+  }
+  .footer-facebook {
+    position: absolute;
+    top: 0px;
+    left: 1px;
+  }
 }

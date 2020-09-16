@@ -188,7 +188,8 @@ h2 {
   height: 20px;
   border-radius: 50%;
   border: none;
-  left: 450px;
+  top: 0px;
+  left: 425px;
   background-color: #ededed;
 }
 
@@ -540,6 +541,23 @@ h2 {
 }
 
 .contact-container {
+  position: relative;
   text-align: right;
+}
+
+.contact-container .main-number {
+  position: relative;
+}
+
+.contact-container .footer-phone {
+  position: absolute;
+  top: 2px;
+  left: -30px;
+}
+
+.contact-container .footer-facebook {
+  position: absolute;
+  top: 0px;
+  left: 1px;
 }
 /*# sourceMappingURL=main.css.map */
