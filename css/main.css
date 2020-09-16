@@ -520,11 +520,13 @@ h2 {
 }
 
 .rights-reserved {
+  margin-top: 39px;
   font-size: 14px;
   line-height: 16px;
 }
 
 .footer-about-us {
+  margin-top: 12px;
   margin-left: 42px;
   max-width: 261px;
   font-size: 14px;
