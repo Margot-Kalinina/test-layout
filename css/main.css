@@ -540,6 +540,7 @@ h2 {
 .footer-navigation-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 13px;
   width: 274px;
 }
 
@@ -550,6 +551,7 @@ h2 {
 .contact-container {
   position: relative;
   text-align: right;
+  padding-top: 9px;
   width: 200px;
 }
 
@@ -565,7 +567,7 @@ h2 {
 
 .contact-container .footer-facebook {
   position: absolute;
-  top: 0px;
+  top: 9px;
   left: 30px;
 }
 
@@ -575,7 +577,7 @@ h2 {
   height: 20px;
   border-radius: 50%;
   border: none;
-  top: 0px;
+  top: 9px;
   left: 207px;
   background-color: #ffffff;
 }
