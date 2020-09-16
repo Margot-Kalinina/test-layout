@@ -1,12 +1,18 @@
 @import "./base/stylename";
+@import "./utils/variables";
 @import "./utils/utils";
 @import "./base/base";
 
+@import "./components/call-me";
+
 @import "./components/logo";
+
 @import "./layout/header";
+@import "./components/shopping-carts";
 
 @import "./layout/hero";
 @import "./layout/our-product-section";
 @import "./layout/about-us-section";
 @import "./layout/news-section";
+
 @import "./layout/footer";

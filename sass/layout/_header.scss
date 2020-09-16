@@ -32,7 +32,6 @@
   .personal-area {
     position: relative;
     font-size: 14px;
-    line-height: 1.14;
     text-decoration-line: underline;
 
     color: #3a4047;
@@ -43,8 +42,9 @@
     }
   }
   .contact-email {
+    display: block;
+    padding-bottom: 2px;
     font-size: 14px;
-    line-height: 1.14;
     text-decoration-line: underline;
 
     color: #3a4047;
@@ -66,7 +66,8 @@
   .main-number {
     position: relative;
     display: block;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 16px;
     color: #3a4047;
     .phone-img {
       position: absolute;
@@ -77,7 +78,7 @@
     position: absolute;
     opacity: 0;
     transform: scale(0);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $time-function;
     z-index: 0;
     top: 37px;
     right: -10px;
@@ -92,7 +93,7 @@
     &.is-open {
       opacity: 1;
       transform: scale(1);
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $time-function;
       z-index: 20;
     }
   }
@@ -137,12 +138,12 @@
     &:hover .item::after,
     &:focus .item::after {
       opacity: 1;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $time-function;
     }
     &:hover .item,
     &:focus .item {
       color: #1ab0ce;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $time-function;
     }
   }
   li + li::before {
@@ -163,7 +164,7 @@
     padding-left: 34px;
     padding-right: 34px;
     color: #3a4047;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $time-function;
     &::after {
       position: absolute;
       top: 0px;
@@ -175,7 +176,7 @@
       width: 100%;
       height: 1px;
       background-color: #1ab0ce;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: $time-function;
     }
   }
 }
@@ -184,4 +185,45 @@
   z-index: 21;
   top: -10px;
   right: 0px;
+}
+.navigation-line {
+  display: flex;
+  .search-container {
+    position: relative;
+    .search-form {
+      &:focus .search-input,
+      &:hover .search-input {
+        opacity: 1;
+        transform: scale(1);
+        transition: $time-function;
+        z-index: 20;
+      }
+    }
+    .search-input {
+      position: absolute;
+      width: 115px;
+
+      top: 17px;
+
+      left: -10px;
+
+      transition: $time-function;
+
+      &:placeholder-shown {
+        opacity: 0;
+        transform: scale(0);
+        transition: $time-function;
+        z-index: 0;
+      }
+    }
+    .search-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 104px;
+
+      border: none;
+      background-color: transparent;
+    }
+  }
 }

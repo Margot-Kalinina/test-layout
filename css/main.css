@@ -1,31 +1,31 @@
 @font-face {
   font-family: "ClearSansRegular";
-  src: url("../../fonts/ClearSansRegular/ClearSansRegular.eot");
-  src: url("../../fonts/ClearSansRegular/ClearSansRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/ClearSansRegular/ClearSansRegular.woff") format("woff"), url("../../fonts/ClearSansRegular/ClearSansRegular.ttf") format("truetype");
+  src: url("../fonts/ClearSansRegular/ClearSansRegular.eot");
+  src: url("../fonts/ClearSansRegular/ClearSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSansRegular/ClearSansRegular.woff") format("woff"), url("../fonts/ClearSansRegular/ClearSansRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ClearSansBold";
-  src: url("../../fonts/ClearSansBold/ClearSansBold.eot");
-  src: url("../../fonts/ClearSansBold/ClearSansBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/ClearSansBold/ClearSansBold.woff") format("woff"), url("../../fonts/ClearSansBold/ClearSansBold.ttf") format("truetype");
+  src: url("../fonts/ClearSansBold/ClearSansBold.eot");
+  src: url("../fonts/ClearSansBold/ClearSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSansBold/ClearSansBold.woff") format("woff"), url("../fonts/ClearSansBold/ClearSansBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ProximaNovaBold";
-  src: url("../../fonts/ProximaNovaBold/ProximaNovaBold.eot");
-  src: url("../../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "ProximaNovaBlack";
-  src: url("../../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
-  src: url("../../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
+  src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"), url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -38,6 +38,11 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
 }
 
 a {
@@ -80,8 +85,29 @@ h2 {
   margin-right: auto;
 }
 
+.call-me-up {
+  position: relative;
+}
+
+.call-me-up .call-me {
+  position: absolute;
+  top: -54px;
+  right: -83px;
+}
+
+.call-me-down {
+  position: relative;
+}
+
+.call-me-down .call-me {
+  position: absolute;
+  top: -54px;
+  right: -83px;
+}
+
 .logo {
   display: flex;
+  font-family: "Proxima nova", sans-serif;
   font-weight: 900;
   line-height: 1;
 }
@@ -141,7 +167,6 @@ h2 {
 .area-email-container .personal-area {
   position: relative;
   font-size: 14px;
-  line-height: 1.14;
   text-decoration-line: underline;
   color: #3a4047;
 }
@@ -153,8 +178,9 @@ h2 {
 }
 
 .area-email-container .contact-email {
+  display: block;
+  padding-bottom: 2px;
   font-size: 14px;
-  line-height: 1.14;
   text-decoration-line: underline;
   color: #3a4047;
 }
@@ -177,7 +203,8 @@ h2 {
 .phone-numbers .main-number {
   position: relative;
   display: block;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 16px;
   color: #3a4047;
 }
 
@@ -303,6 +330,64 @@ h2 {
   z-index: 21;
   top: -10px;
   right: 0px;
+}
+
+.navigation-line {
+  display: flex;
+}
+
+.navigation-line .search-container {
+  position: relative;
+}
+
+.navigation-line .search-container .search-form:focus .search-input,
+.navigation-line .search-container .search-form:hover .search-input {
+  opacity: 1;
+  transform: scale(1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 20;
+}
+
+.navigation-line .search-container .search-input {
+  position: absolute;
+  width: 115px;
+  top: 17px;
+  left: -10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-line .search-container .search-input:placeholder-shown {
+  opacity: 0;
+  transform: scale(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+.navigation-line .search-container .search-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 104px;
+  border: none;
+  background-color: transparent;
+}
+
+.shopping-cart-container {
+  position: relative;
+  margin-left: 19px;
+  margin-top: 8px;
+}
+
+.shopping-cart-container .shopping-cart {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.shopping-cart-container .ellipse {
+  position: absolute;
+  top: -8px;
+  left: 34px;
 }
 
 .hero-section {
@@ -486,6 +571,8 @@ h2 {
 
 .news-section .news-list li {
   padding-top: 29px;
+  padding-right: 14px;
+  padding-left: 14px;
   min-height: 170px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -538,7 +625,7 @@ h2 {
 }
 
 .footer-section .container {
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
 .footer {
@@ -562,7 +649,7 @@ h2 {
 .footer .studio {
   position: relative;
   margin-top: 33px;
-  font-family: "Cuprum";
+  font-family: "Cuprum", sans-serif;
   font-weight: 500;
   font-size: 11px;
   line-height: 13px;
@@ -607,6 +694,10 @@ h2 {
 
 .contact-container .main-number {
   position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #3a4047;
 }
 
 .contact-container .footer-phone {
@@ -638,8 +729,9 @@ h2 {
 
 .glianec-logo {
   position: absolute;
-  top: -2px;
-  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
 }
 
 .footer-secondary-number-container {

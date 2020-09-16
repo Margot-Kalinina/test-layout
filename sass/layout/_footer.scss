@@ -2,7 +2,7 @@
   width: 100%;
   background: #f7f7f7;
   .container {
-    padding-right: 30px;
+    padding-right: 40px;
   }
 }
 .footer {
@@ -22,7 +22,7 @@
   .studio {
     position: relative;
     margin-top: 33px;
-    font-family: "Cuprum";
+    font-family: "Cuprum", sans-serif;
     font-weight: 500;
     font-size: 11px;
     line-height: 13px;
@@ -62,6 +62,10 @@
   width: 200px;
   .main-number {
     position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #3a4047;
   }
   .footer-phone {
     position: absolute;
@@ -89,14 +93,15 @@
 }
 .glianec-logo {
   position: absolute;
-  top: -2px;
-  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
 }
 .footer-secondary-number-container {
   position: absolute;
   opacity: 0;
   transform: scale(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $time-function;
   z-index: 0;
   top: 45px;
   right: -35px;
@@ -111,7 +116,7 @@
   &.is-open {
     opacity: 1;
     transform: scale(1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $time-function;
     z-index: 20;
   }
 

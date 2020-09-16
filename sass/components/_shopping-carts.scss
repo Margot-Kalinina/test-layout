@@ -1,0 +1,15 @@
+.shopping-cart-container {
+  position: relative;
+  margin-left: 19px;
+  margin-top: 8px;
+  .shopping-cart {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .ellipse {
+    position: absolute;
+    top: -8px;
+    left: 34px;
+  }
+}
