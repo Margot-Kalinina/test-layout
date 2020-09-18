@@ -70,7 +70,7 @@
                     alt="facebook"
                   />
                 </a>
-                <a class="main-number" href="tel:+3803454042>">
+                <a class="main-number" href="tel:+3803454042">
                   <img
                     class="phone-img"
                     width="20"
@@ -80,28 +80,29 @@
                   />(044) 345-40-42
                 </a>
                 <button
-                  telephone-button
-                  aria-controls="telephone-container"
-                  class="phone-button"
                   type="button"
+                  class="phone-button"
+                  aria-expanded="false"
+                  aria-controls="telephone-container"
+                  data-header-button
                 >
                   <img
                     class="feather-icon"
-                    width="8"
-                    height="4"
+                    width="9"
+                    height="5"
                     src="./image/feather-icon.svg"
                     alt=""
                   />
                 </button>
 
                 <div
-                  telephone-container
                   id="telephone-container"
                   class="header-secondary-number-container"
+                  data-header-number
                 >
                   <ul>
                     <li>
-                      <a class="secondary-number" href="tel:+380994455418>"
+                      <a class="secondary-number" href="tel:+380994455418"
                         ><img
                           class="number-icon"
                           width="25"
@@ -112,7 +113,7 @@
                       >
                     </li>
                     <li>
-                      <a class="secondary-number" href="tel:+380964977803>"
+                      <a class="secondary-number" href="tel:+380964977803"
                         ><img
                           class="number-icon"
                           width="25"
@@ -123,7 +124,7 @@
                       >
                     </li>
                     <li>
-                      <a class="secondary-number" href="tel:+380634351681>"
+                      <a class="secondary-number" href="tel:+380634351681"
                         ><img
                           class="number-icon"
                           width="25"
@@ -168,7 +169,7 @@
           </ul>
         </nav>
         <div class="search-container">
-          <form class="search-form" action="" method="get">
+          <form class="search-form" method="get">
             <input
               class="search-input"
               name="s"
@@ -183,11 +184,13 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero-section">
-        <div class="hero-text container">
-          <h1>Оперативная печать полиграфии от 1 дня!</h1>
-          <p>Доставка в любой город Украины</p>
-          <button class="make-an-order" type="button">Сделать заказ</button>
+      <section>
+        <div class="hero-section">
+          <div class="hero-text container">
+            <h1>Оперативная печать полиграфии от 1 дня!</h1>
+            <p>Доставка в любой город Украины</p>
+            <button class="make-an-order" type="button">Сделать заказ</button>
+          </div>
         </div>
       </section>
       <div class="call-me-up container">
@@ -283,7 +286,7 @@
           <ul class="news-list">
             <li>
               <a href="">
-                <time>14 марта 2018</time>
+                <p class="time">14 марта 2018</p>
                 <p>
                   Оазисное земледелие поднимает культурный субэкваториальный
                   климат, там же можно с палками
@@ -292,7 +295,7 @@
             </li>
             <li>
               <a href="">
-                <time>14 марта 2018</time>
+                <p class="time">14 марта 2018</p>
                 <p>
                   Оазисное земледелие поднимает культурный субэкваториальный
                   климат, там же можно с палками
@@ -301,7 +304,7 @@
             </li>
             <li>
               <a href="">
-                <time>14 марта 2018</time>
+                <p class="time">14 марта 2018</p>
                 <p>
                   Оазисное земледелие поднимает культурный субэкваториальный
                   климат, там же можно с палками
@@ -322,30 +325,31 @@
     </div>
     <footer class="footer-section">
       <div class="footer container">
-        <div>
-          <a class="logo" lang="en" href="">
-            <img
-              class="img-logo"
-              width="67"
-              height="62"
-              src="./image/logo.png"
-              alt="logo"
-            />
-            <div class="logo-text-container">
-              <p class="main-part">PRINTE</p>
-              <p class="secondary-part">Ваша типография</p>
-            </div>
-          </a>
-          <p class="rights-reserved">2018 — Все права защищены</p>
+        <div class="tablet-flex">
+          <div>
+            <a class="logo" lang="en" href="">
+              <img
+                class="img-logo"
+                width="67"
+                height="62"
+                src="./image/logo.png"
+                alt="logo"
+              />
+              <div class="logo-text-container">
+                <p class="main-part">PRINTE</p>
+                <p class="secondary-part">Ваша типография</p>
+              </div>
+            </a>
+            <p class="rights-reserved">2018 — Все права защищены</p>
+          </div>
+          <div class="footer-about-us">
+            <p class="what-we-do">
+              Качественная оперативная цифровая, широкоформатная и сувенирная
+              полиграфия!
+            </p>
+            <p class="work-hour">Работаем с 9 до 18, вс и сб выходные</p>
+          </div>
         </div>
-        <div class="footer-about-us">
-          <p class="what-we-do">
-            Качественная оперативная цифровая, широкоформатная и сувенирная
-            полиграфия!
-          </p>
-          <p class="work-hour">Работаем с 9 до 18, вс и сб выходные</p>
-        </div>
-
         <nav>
           <div class="footer-navigation-container">
             <ul>
@@ -370,7 +374,7 @@
                 alt="facebook"
               />
             </a>
-            <a class="main-number" href="tel:+3803454042>">
+            <a class="main-number" href="tel:+3803454042">
               <img
                 class="footer-phone"
                 width="20"
@@ -380,27 +384,28 @@
               />(044) 345-40-42
             </a>
             <button
-              footer-telephone-button
-              aria-expanded="footer-telephone-container"
-              class="footer-phone-button"
               type="button"
+              class="footer-phone-button"
+              aria-expanded="false"
+              aria-controls="footer-telephone-container"
+              data-footer-button
             >
               <img
                 class="feather-icon"
-                width="8"
-                height="4"
+                width="9"
+                height="5"
                 src="./image/feather-icon.svg"
                 alt=""
               />
             </button>
             <div
-              footer-telephone-container
               id="footer-telephone-container"
               class="footer-secondary-number-container"
+              data-footer-number
             >
               <ul>
                 <li>
-                  <a class="secondary-number" href="tel:+380994455418>"
+                  <a class="secondary-number" href="tel:+380994455418"
                     ><img
                       class="number-icon"
                       width="25"
@@ -411,7 +416,7 @@
                   >
                 </li>
                 <li>
-                  <a class="secondary-number" href="tel:+380964977803>"
+                  <a class="secondary-number" href="tel:+380964977803"
                     ><img
                       class="number-icon"
                       width="25"
@@ -422,7 +427,7 @@
                   >
                 </li>
                 <li>
-                  <a class="secondary-number" href="tel:+380634351681>"
+                  <a class="secondary-number" href="tel:+380634351681"
                     ><img
                       class="number-icon"
                       width="25"

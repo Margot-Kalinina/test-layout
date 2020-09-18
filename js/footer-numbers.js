@@ -1,6 +1,6 @@
 (() => {
-  const telBtnRef = document.querySelector("[footer-telephone-button]");
-  const telContRef = document.querySelector("[footer-telephone-container]");
+  const telBtnRef = document.querySelector("[data-footer-button]");
+  const telContRef = document.querySelector("[data-footer-number]");
 
   telBtnRef.addEventListener("click", () => {
     const expanded =

@@ -8,7 +8,9 @@
   }
 
   .news-list {
-    display: flex;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
     margin-bottom: 51px;
     a {
       display: block;
@@ -39,7 +41,7 @@
       color: #3a4047;
       transition: $time-function;
     }
-    time {
+    .time {
       font-size: 14px;
       line-height: 16px;
       color: #bec7d1;

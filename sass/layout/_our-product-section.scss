@@ -16,12 +16,22 @@
     color: #3a4047;
   }
   .main-item {
+    @media screen and (max-width: 1199px) {
+      margin-right: auto;
+      margin-left: auto;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
     position: relative;
 
-    height: 291px;
+    min-height: 291px;
+    width: 370px;
     padding-top: 29px;
     padding-left: 120px;
     padding-right: 28px;
+    padding-bottom: 26px;
     font-size: 14px;
     line-height: 1.14;
 
@@ -45,12 +55,17 @@
   }
 }
 .product-examples-list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .list-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  li + li {
+    margin-right: 50px;
+  }
 }
 .secondary-product-list {
   height: 100%;

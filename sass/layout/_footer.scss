@@ -2,14 +2,30 @@
   width: 100%;
   background: #f7f7f7;
   .container {
-    padding-right: 40px;
+    @media screen and (min-width: 1200px) {
+      padding-right: 40px;
+    }
+  }
+}
+.tablet-flex {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 .footer {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 120px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+  }
   padding-top: 19px;
-  padding-bottom: 32px;
   color: #3a4047;
   a {
     color: #3a4047;
@@ -20,24 +36,56 @@
     text-decoration-line: underline;
   }
   .studio {
+    @media screen and (max-width: 767px) {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 50px;
+      width: max-content;
+    }
+    @media screen and (min-width: 768px) and(max-width: 1199px) {
+      margin-top: 8px;
+    }
+    @media screen and(min-width: 1200px) {
+      margin-top: 33px;
+    }
+
     position: relative;
-    margin-top: 33px;
     font-family: "Cuprum", sans-serif;
     font-weight: 500;
     font-size: 11px;
     line-height: 13px;
     text-transform: uppercase;
+
+    .glianec-logo {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @media screen and (max-width: 1199px) {
+        left: -20px;
+      }
+      @media screen and (min-width: 1200px) {
+        left: 25%;
+      }
+    }
   }
 }
 .rights-reserved {
-  margin-top: 39px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 39px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-top: 26px;
+  }
   font-size: 14px;
   line-height: 16px;
 }
 .footer-about-us {
-  margin-top: 12px;
-  margin-left: 42px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 42px;
+  }
   max-width: 261px;
+
   font-size: 14px;
   line-height: 21px;
   .what-we-do {
@@ -46,9 +94,16 @@
 }
 .footer-navigation-container {
   display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: 1199px) {
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    width: 274px;
+  }
   padding-top: 13px;
-  width: 274px;
+
   li {
     &:not(:last-child) {
       margin-bottom: 16px;
@@ -56,11 +111,27 @@
   }
 }
 .contact-container {
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: max-content;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    text-align: right;
+  }
   position: relative;
-  text-align: right;
   padding-top: 9px;
-  width: 200px;
+
   .main-number {
+    @media screen and (max-width: 1199px) {
+      margin-left: 20px;
+    }
     position: relative;
     font-weight: 700;
     font-size: 16px;
@@ -75,36 +146,55 @@
   .footer-facebook {
     position: absolute;
     top: 9px;
-    left: 30px;
+    @media screen and (max-width: 767px) {
+      left: -40px;
+    }
+    @media screen and (min-width: 768px) {
+      left: 30px;
+    }
   }
   .footer-phone-button {
     position: absolute;
+    top: 9px;
+    @media screen and (max-width: 767px) {
+      right: -27px;
+    }
+    @media screen and (min-width: 768px) {
+      left: 207px;
+    }
     width: 20px;
     height: 20px;
     border-radius: 50%;
     border: none;
-    top: 9px;
-    left: 207px;
+
     background-color: #ffffff;
   }
 }
 .footer-contact-item {
-  margin-top: 20px;
-}
-.glianec-logo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 25%;
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 10px;
+  }
 }
 .footer-secondary-number-container {
   position: absolute;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    left: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    right: -35px;
+  }
+  @media screen and (min-width: 1200px) {
+    right: -35px;
+  }
+  top: 45px;
   opacity: 0;
   transform: scale(0);
   transition: $time-function;
   z-index: 0;
-  top: 45px;
-  right: -35px;
+
   padding-top: 7px;
   padding-left: 65px;
   text-align: left;

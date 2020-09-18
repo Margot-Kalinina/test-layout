@@ -1,9 +1,12 @@
 .hero-section {
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
   padding-top: 153px;
-  height: 500px;
+  padding-bottom: 141px;
   max-width: 1920px;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
   background-color: #2e2c2c;
   background-image: linear-gradient(
       0deg,

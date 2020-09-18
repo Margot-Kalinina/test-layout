@@ -1,4 +1,7 @@
 .logo {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
   display: flex;
   font-family: "Proxima nova", sans-serif;
   font-weight: 900;

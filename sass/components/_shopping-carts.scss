@@ -1,6 +1,16 @@
 .shopping-cart-container {
+  @media screen and (max-width: 767px) {
+    bottom: 25%;
+    right: 15%;
+    position: absolute;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 19px;
+  }
+  margin-right: 50px;
+  margin-left: 5px;
   position: relative;
-  margin-left: 19px;
+
   margin-top: 8px;
   .shopping-cart {
     position: absolute;

@@ -3,14 +3,20 @@
   .call-me {
     position: absolute;
     top: -54px;
-    right: -83px;
+    right: -7px;
+    @media screen and (min-width: 1350px) {
+      right: -83px;
+    }
   }
 }
 .call-me-down {
   position: relative;
   .call-me {
     position: absolute;
-    top: -54px;
-    right: -83px;
+    bottom: -40px;
+    right: -7px;
+    @media screen and (min-width: 1350px) {
+      right: -83px;
+    }
   }
 }
