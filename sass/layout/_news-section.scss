@@ -1,6 +1,11 @@
 .news-section {
+  @media screen and (max-width: 399px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 400px) {
+    padding-bottom: 49px;
+  }
   padding-top: 33px;
-  padding-bottom: 49px;
   text-align: center;
 
   h2 {
