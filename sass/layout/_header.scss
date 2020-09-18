@@ -14,7 +14,8 @@
 .header-about-us {
   margin-left: 2%;
   @media screen and (max-width: 767px) {
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: left;
   }
   @media screen and (min-width: 1199px) {
@@ -44,7 +45,6 @@
   }
   margin-left: 69px;
   @media screen and (min-width: 1199px) {
-    width: max-content;
     display: flex;
     justify-content: space-between;
     width: 347px;
@@ -63,6 +63,12 @@
     }
   }
   .contact-email {
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: 3px;
+    }
     display: block;
     padding-bottom: 2px;
     font-size: 14px;
@@ -241,8 +247,8 @@
     }
     @media screen and (min-width: 465px) and (max-width: 767px) {
       position: absolute;
-      top: 30px;
-      right: 40%;
+      top: 28px;
+      right: 35%;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       position: absolute;

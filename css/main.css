@@ -123,6 +123,12 @@ h2 {
   right: -7px;
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
+  .call-me-down .call-me {
+    bottom: -35px;
+  }
+}
+
 @media screen and (min-width: 1350px) {
   .call-me-down .call-me {
     right: -83px;
@@ -186,7 +192,8 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .header-about-us {
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: left;
   }
 }
@@ -223,7 +230,6 @@ h2 {
 
 @media screen and (min-width: 1199px) {
   .area-email-container {
-    width: max-content;
     display: flex;
     justify-content: space-between;
     width: 347px;
@@ -249,6 +255,18 @@ h2 {
   font-size: 14px;
   text-decoration-line: underline;
   color: #3a4047;
+}
+
+@media screen and (max-width: 767px) {
+  .area-email-container .contact-email {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .area-email-container .contact-email {
+    margin-top: 3px;
+  }
 }
 
 .phone-numbers {
@@ -466,8 +484,8 @@ h2 {
 @media screen and (min-width: 465px) and (max-width: 767px) {
   .navigation-line .search-container {
     position: absolute;
-    top: 30px;
-    right: 40%;
+    top: 28px;
+    right: 35%;
   }
 }
 
@@ -888,9 +906,9 @@ h2 {
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 400px) and (max-width: 1199px) {
   .footer {
-    padding-top: 19px;
+    padding-top: 30px;
   }
 }
 
@@ -910,6 +928,7 @@ h2 {
   .footer {
     display: flex;
     justify-content: space-between;
+    padding-top: 19px;
     padding-bottom: 32px;
   }
 }
@@ -993,6 +1012,12 @@ h2 {
   max-width: 261px;
   font-size: 14px;
   line-height: 21px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-about-us {
+    margin-top: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
